@@ -8,10 +8,11 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   color: #281030;
+
 }
 body{
-  background-color: #f2f3eb;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
+  height: auto;
 }
 
 .col-1{width: 8.33%;}
@@ -33,12 +34,24 @@ body{
   padding: 15px;
 }
 
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 85%;
+}
+
 .row::after{
   content: "";
   clear: both;
   display: table;
 }
 
+.roboto{
+  font-family: 'Roboto', sans-serif !important;
+}
 nav{
   background-color: #ffffff;
   height: 80px;
@@ -84,6 +97,10 @@ a.active,a:hover{
   display: none;
 }
 
+hr {
+  border-top: 1px solid gray !important;
+}
+
 section{
   /* background: url(123.JPG) no-repeat; */
   background-size: cover;
@@ -127,6 +144,33 @@ footer{
   color: #f2f3eb !important;
 }
 
+.fs-15{
+  font-size: 15px;
+}
+.fs-20{
+  font-size: 20px;
+}
+.fs-25{
+  font-size: 25px;
+}
+.fs-30{
+  font-size: 30px;
+}
+.fs-35{
+  font-size: 35px;
+}
+.fs-1em{
+  font-size: 1em;
+}
+.fs-2em{
+  font-size: 2em;
+}
+.fs-3em{
+  font-size: 3em;
+}
+.w3-container, .w3-panel {
+  padding: 1em 16px !important;
+}
 
 /* Para tablet */
 @media only screen and (max-width: 900px) and (min-width: 600px){
