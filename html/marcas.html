@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
     <title>Marcas</title>
+    <link rel="icon" type="image/png" href="../img/eddo.ico" />
 </head>
 <body>
     <!-- MENU DE NAVEGACION -->
@@ -18,58 +19,61 @@
         </label>
         <img src="../img/logo.png" class="img-logo" alt="title"/>
         <ul>
-            <li><a class="active" href="../index.html">inicio</a></li>
-            <li><a href="../html/marcas.html">Marcas</a></li>
+            <li><a href="../index.html">inicio</a></li>
+            <li><a class="active" href="../html/marcas.html">Marcas</a></li>
             <li><a href="../html/contact.html">Contactanos</a></li>
         </ul>
         
     </nav>
     <!-- SLIDER PARADOX  -->
-
-    <section class="primera-parte">
+    
+    <div class="primera-parte">
         <div class="row">
             <div class="col-4">
-                <h2 class="text-center">Samsumg</h2>
-                <a href="../../html/xiaomi.html" target="_blank">
-                    <img src="../img/redmi9.png" class="img-redmi hover-img" alt="redmi">
+                <h2 class="text-center text-marcas">Samsumg</h2>
+                <a href="../html/samsumg.html" target="_blank">
+                    <img src="../img/samsung.png" class="img-redmi hover-img" alt="redmi">
+                    
                 </a>
             </div>
             <div class="col-4">
-                <h2 class="text-center">Xiaomi</h2>
-                <a href="../../html/xiaomi.html" target="_blank">
-                    <img src="../img/redmi9.png" class="img-redmi hover-img" alt="redmi">
+                <h2 class="text-center text-marcas">Xiaomi</h2>
+                <a href="./html/redminote9.html" target="_blank">
+                    <img src="../img/xiaomi.png" class="img-redmi hover-img" alt="redmi">
                 </a>
             </div>
             <div class="col-4">
-                <h2 class="text-center">Iphone</h2>
-                <a href="../html/xiaomi.html" target="_blank">
-                    <img src="../img/redmi9.png" class="img-redmi hover-img" alt="redmi">
+                <h2 class="text-center text-marcas">Iphone</h2>
+                <a href="../html/iphone.html" target="_blank">
+                    <img src="../img/iphones.png" class="img-redmi hover-img" alt="redmi">
                 </a>
             </div>
         </div>
-    </section>
-    <section class="segunda-parte">
+    </div>
+    
+    <div class="segunda-parte">
         <div class="row">
             <div class="col-4">
-                <H2 class="text-center">Huawei</H2>
-                <a href="../html/xiaomi.html" target="_blank">
-                    <img src="../img/redmi9.png" class="img-redmi hover-img" alt="redmi">
+                <H2 class="text-center text-marcas">Huawei</H2>
+                <a href="../html/huawei.html" target="_blank">
+                    <img src="../img/huawei.png" class="img-redmi hover-img" alt="redmi">
                 </a>
             </div>
             <div class="col-4">
-                <h2 class="text-center">Nokia</h2>
-                <a href="../html/xiaomi.html" target="_blank">
-                    <img src="../img/redmi9.png" class="img-redmi hover-img" alt="redmi">
+                <h2 class="text-center text-marcas">Nokia</h2>
+                <a href="../html/nokia.html" target="_blank">
+                    <img src="../img/sony.png" class="img-redmi hover-img" alt="redmi">
                 </a>
             </div>
             <div class="col-4">
-                <h2 class="text-center">Sony</h2>
-                <a href="../html/xiaomi.html" target="_blank">
-                    <img src="../img/redmi9.png" class="img-redmi hover-img" alt="redmi">
+                <h2 class="text-center text-marcas">Sony</h2>
+                <a href="../html/sony.html" target="_blank">
+                    <img src="../img/sony.png" class="img-redmi hover-img" alt="redmi">
                 </a>
             </div>
         </div>
-    </section>
+    </div> 
+    
     
     <footer>
         <div class="row text-hueso">
@@ -91,22 +95,3 @@
     </footer>
 </body>
 </html>
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-    
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-    }
-    
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-        }
-        x[slideIndex-1].style.display = "block";  
-    }
-</script>
