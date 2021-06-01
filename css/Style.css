@@ -112,7 +112,7 @@ section{
 }
 
 .img-logo{
-    width: 12%;
+    width: 10%;
 }
 .text-center{
     text-align: center;
@@ -265,6 +265,11 @@ header .showcase h1{
     text-decoration: none !important;
     background-color: transparent;
 }
+
+.text-danger{
+    color: red;
+}
+
 /* Para tablet */
 @media only screen and (max-width: 900px) and (min-width: 600px){
     .col-t-1{width: 8.33%;}
