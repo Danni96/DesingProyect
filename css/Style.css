@@ -298,6 +298,9 @@ header .showcase h1{
         width: 100%;
         margin-left: 0px;
     }
+    .box-border{
+        position: initial;
+    }
 }
 
 /* Para telefonos */
@@ -343,6 +346,9 @@ header .showcase h1{
     }
     .img-slider-fade{
         height: 350px !important;
+    }
+    .box-border{
+        position: initial;
     }
 }
 
