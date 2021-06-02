@@ -301,6 +301,9 @@ header .showcase h1{
     .box-border{
         position: initial;
     }
+    .main-banner-marca{
+        height: 350px;
+    }
 }
 
 /* Para telefonos */
@@ -349,6 +352,9 @@ header .showcase h1{
     }
     .box-border{
         position: initial;
+    }
+    .main-banner-marca{
+        height: 350px;
     }
 }
 
