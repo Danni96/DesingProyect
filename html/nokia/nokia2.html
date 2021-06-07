@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    <title>ParadoxTech</title>
+    <link rel="icon" type="image/png" href="/img/eddo.ico" />
+    <meta name="theme-color" content="#281031">
+</head>
+<body>
+    <!-- MENU DE NAVEGACION -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img src="/img/logo.png" class="img-logo" alt="title"/>
+        <ul>
+            <li><a class="active" href="/index.html">inicio</a></li>
+            <li><a href="/html/marcas.html">Marcas</a></li>
+            <li><a href="/html/contact.html">Contactanos</a></li>
+        </ul>
+        
+    </nav>
+    <header>
+        <div class="showcase">
+            <div class="tenue">
+                <a href="#" class="no-decoration">
+                    <img src="/img/nokia.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="container w3-light-gray">
+        
+        <div class="row">
+            <br> <br>
+            <h1 class="fs-3em text-center">
+                NOKIA
+            </h1>
+            <br>
+            <p class="fs-20 roboto w3-justify">
+                Cuando un usuario busca un móvil económico, en ocasiones prima más la seguridad de saber que el software no dará problemas 
+                antes que algo más de batería o una cámara ligeramente mejor. Esta forma de pensar es la que intenta potenciar Nokia con su gama de entrada.
+            </p>
+            <div class="col-6">
+                <img src="/img/nokia1.png" alt="redmi" class="img-redmi">
+                <br>
+                <button onclick="document.getElementById('idcomprar').style.display='block'" class="w3-button w3-red">
+                    COMPRAR
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </button>
+                
+                
+            </div>
+            <div class="col-6">
+                <h2 class="text-center fs-30">CARACTERISTICAS</h2>
+                <HR></HR>
+                <div class="row">
+                    <div class="col-4">
+                        <h3 class="fs-20">PANTALLA</h3>
+                    </div>
+                    <div class="col-8">
+                        <p class="fs-20">
+                            6.39” HD+IPS
+                        </p>
+                    </div>
+                </div>
+                <HR></HR>
+                <div class="row">
+                    <div class="col-4">
+                        <h3 class="fs-20">PROCESADOR</h3>
+                    </div>
+                    <div class="col-8">
+                        <p class="fs-20">
+                            Snapdragon 460
+                        </p>
+                    </div>
+                </div>
+                <HR></HR>
+                <div class="row">
+                    <div class="col-4">
+                        <h3 class="fs-20">MEMORIA RAM</h3>
+                    </div>
+                    <div class="col-8">
+                        <p class="fs-20">
+                            3/4 GB
+                        </p>
+                    </div>
+                </div>
+                <HR></HR>
+                <div class="row">
+                    <div class="col-4">
+                        <h3 class="fs-20">ALMACENAMIENTO</h3>
+                    </div>
+                    <div class="col-8">
+                        <p class="fs-20">
+                            32/64 GBs
+                        </p>
+                    </div>
+                </div>
+                <HR></HR>
+                <div class="row">
+                    <div class="col-4">
+                        <h3 class="fs-20">BATERÍA</h3>
+                    </div>
+                    <div class="col-8">
+                        <p class="fs-20">
+                            4.000mAh 10W
+                        </p>
+                    </div>
+                </div>
+                <HR></HR>
+                <div class="row">
+                    <div class="col-4">
+                        <h3 class="fs-20">CÁMARAS </h3>
+                    </div>
+                    <div class="col-8">
+                        <p class="fs-20">
+                            camaras delantera: 8 MP <br>
+                            <br>
+                            camara trasera: 13 MP
+                            2 MP profundidad
+                            5 MP gran angular
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="idcomprar" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+                <header class="w3-container w3-teal"> 
+                    <span onclick="document.getElementById('idcomprar').style.display='none'" 
+                    class="w3-button w3-display-topright">&times;</span>
+                    <h2>COMPRAS MOBILES</h2>
+                </header>
+                <div class="w3-container">
+                    <p>El producto se agregro al carrito</p>
+                </div>
+                <footer class="w3-container w3-teal">
+                    <p>Comprar</p>
+                </footer>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="row text-hueso">
+            <div class="col-4">
+                <p class="text-hueso text-center">Pagina creado por  <br>
+                    Estudiantes de la Universidad de Sonsonate </p> <br>
+                </div>
+                <div class="col-4">
+                    <p class="text-hueso text-center">
+                        UNIVERSIDAD DE SONSONATE 2021 &copy;
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p class="text-hueso text-center">
+                        Todos los derechos reservados &#174;
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/js/script.js"></script>
+</html>

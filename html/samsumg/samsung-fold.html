@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
-    <title>ParadoxTech</title>
+    <title>Galaxy Z Fold 2</title>
 </head>
 <body>
     <!-- MENU DE NAVEGACION -->
@@ -30,23 +30,30 @@
         <div class="row">
             <br> <br>
             <h1 class="fs-3em text-center">
-                XIAOMI REDMI NOTE 9
+                Galaxy Z Fold 2 5G
             </h1>
             <br>
             <p class="fs-20 roboto w3-justify">
-                Xiaomi tiene varios caballos de batalla para ganar en la gama media de 2020. Varios de ellos pertenecen a la familia Redmi Note 9, 
-                en la que el modelo con menos apellidos es el más barato, aunque no por ello menos interesante. Haciendo compañía a los Xiaomi Redmi Note 9S 
-                y Redmi Note 9 Pro, el Redmi Note 9 es objeto de este análisis en el que responderemos a la pregunta de si vale la pena o no este modelo.
+                Descubre el teléfono que está cambiando la forma del futuro. Un smartphone plegable número uno, de vanguardia con un rendimiento potente, cristal plegable y una batería para todo el día, todo en la palma de su mano.1,2
+                El próximo capítulo de la tecnología móvil.
+                Introducing Galaxy Z Fold2
+                El smartphone del futuro está disponible en dos intensos colores: Mystic Black y Mystic Bronze. Elige el negro para un look premium y atemporal, o sé el centro de todas las miradas con el bronce.
             </p>
             <div class="col-6">
-                <img src="https://i.blogs.es/e0ae36/img_7613/2560_3000.jpg" alt="redmi" class="img-redmi">
+                <div class="item">
+                    <p class="item-title"> Galaxy Z Fold 2 5G</p>
+                    <img src="/img/z-fold.png" alt="redmi" class="img-redmi">
+                    <br>
+                    <P>
+                        <strong class="item-price" style="font-weight: 900;">PRECIO:</strong> $1,500 USD
+                    </P>
+                    <input type="number" name="precio" value="1" id="precio" max="3" min="1">
+                </div>
                 <br>
-                <button onclick="document.getElementById('idcomprar').style.display='block'" class="w3-button w3-red">
+                <button id="btn-comprar" onclick="document.getElementById('idcomprar').style.display='block', getValueInput1()" class="w3-button w3-red addToCart">
                     COMPRAR
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 </button>
-                
-                
             </div>
             <div class="col-6">
                 <h2 class="text-center fs-30">CARACTERISTICAS</h2>
@@ -57,9 +64,8 @@
                     </div>
                     <div class="col-8">
                         <p class="fs-20">
-                            6,53" IPS FullHD+ <br>
-                            2.340 x 1.080 px (19,5:9) <br>
-                            450 nits, Gorilla Glass 5
+                            Principal: 7,6” QXGA+ Dynamic AMOLED 2X Infinity Flex (2.208 x 1.766 px) <br>
+                            Externa: 6,2" Super AMOLED (2.260 x 816 px)
                         </p>
                     </div>
                 </div>
@@ -70,9 +76,7 @@
                     </div>
                     <div class="col-8">
                         <p class="fs-20">
-                            MediaTek Helio G85
-                            Octa-core a 2.0GHz
-                            GPU ARM Mali G52
+                            Octa-core 64 bits 7 nm
                         </p>
                     </div>
                 </div>
@@ -83,7 +87,7 @@
                     </div>
                     <div class="col-8">
                         <p class="fs-20">
-                            3 / 4 GB
+                            12 GB
                         </p>
                     </div>
                 </div>
@@ -94,7 +98,7 @@
                     </div>
                     <div class="col-8">
                         <p class="fs-20">
-                            64 / 128 GB + microSD (hasta 512GB)
+                            256 GB UFS 3.1
                         </p>
                     </div>
                 </div>
@@ -105,8 +109,7 @@
                     </div>
                     <div class="col-8">
                         <p class="fs-20">
-                            5.020 mAh
-                            Carga rápida 18W
+                            4.500 mAh dual + carga rápida + inalámbrica
                         </p>
                     </div>
                 </div>
@@ -117,12 +120,12 @@
                     </div>
                     <div class="col-8">
                         <p class="fs-20">
-                            Principal: 48MP, f/1.79, 1.6μm
-                            Gran angular: 8MP, f/2.2, 118º
-                            Macro: 2MP
-                            Profundidad: 2MP <br>
-                            CÁMARA FRONTAL
-                            13 megapíxeles, f/2.25
+                            Gran angular: 12 MP (1,12 µm) F/2.2
+                            Principal: 12 MP (1,8 µm) F/1.8, OIS, Dual Pixel
+                            Teleobjetivo: 12 MP (1 µm) F/2.4
+                            <br> <br>
+                            Trasera: Interna: 10 MP (1,22 µm) F/2.2
+                            Externa: 10 MP (1,22 µm) F/2.2
                         </p>
                     </div>
                 </div>
@@ -136,17 +139,35 @@
                     class="w3-button w3-display-topright">&times;</span>
                     <h2>COMPRAS MOBILES</h2>
                 </header>
-                <div class="w3-container">
-                    <p>El producto se agregro al carrito</p>
+                <div class="w3-container w3-striped">
+                    <table class="w3-table">
+                        <tr class="w3-light-blue">
+                            <th>Producto</th>
+                            <th>precio</th>
+                            <th>cantidad</th>
+                        </tr>
+                        <tr>
+                            <td>SAMSUNG</td>
+                            <td>
+                                <input type="text" name="precio" id="i-precio" value="$1,500" disabled class="inputvalue"/>
+                            </td>
+                            <td>
+                                <input type="text" name="precio" id="i-reemplazo" value="1" disabled class="inputvalue"/>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <footer class="w3-container w3-teal">
-                    <p>Comprar</p>
+                    <button id="btn-comprado" class="w3-button w3-red w3-right" onclick="funComprado()">
+                        COMPRAR
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </button>
                 </footer>
             </div>
         </div>
         
     </div>
-
+    
     <footer>
         <div class="row text-hueso">
             <div class="col-4">
@@ -164,5 +185,45 @@
             </div>
         </div>
     </footer>
+    
 </body>
+<script>
+    function funComprado(){
+        document.getElementById("btn-comprado").innerHTML = alert("El producto se compro correctamente");
+        location.reload();
+    }
+    const getValueInput1 = () =>{
+        let inputValue1 = document.getElementById('precio').value;
+        document.getElementById("precio").innerHTML = inputValue1; 
+        if(inputValue1=="1"){
+            var btnprecio = document.getElementById("btn-comprar").addEventListener("click", cambioPrecio);
+            function cambioPrecio() {
+                var inputNombre = document.getElementById('i-precio');
+                inputNombre.value = "$ 3,000";
+            }
+            
+            console.log(inputValue1);
+        }if(inputValue1=="2"){   
+            inputValue1= "2"
+            console.log(inputValue1);
+        }if(inputValue1=="3"){
+            inputValue1= "3"
+            console.log(inputValue1);
+        }
+    }
+    
+    window.addEventListener("load", cargaPagina);
+    function cargaPagina() {
+        var btn = document.getElementById("btn-comprar").addEventListener("click", cambioInput);
+    }
+    
+    function cambioInput() {
+        var inputNombre = document.getElementById('i-reemplazo');
+        inputNombre.value = inputValue1;
+    }
+    
+    
+    
+    
+</script>
 </html>
