@@ -43,7 +43,13 @@
                 
                 <img src="/img/note10.png" alt="redmi" class="img-redmi">
                 <br>
-                <button onclick="document.getElementById('idcomprar').style.display='block'" class="w3-button w3-red">
+                <br>
+                <P>
+                    <strong class="item-price" style="font-weight: 900;">PRECIO:</strong> $250 USD
+                </P>
+                <input type="number" name="precio" value="1" id="precio" max="3" min="1">
+                <br>
+                <button onclick="document.getElementById('idcomprar').style.display='block', getValueInput() " class="w3-button w3-red">
                     COMPRAR
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 </button>
@@ -138,11 +144,85 @@
                     class="w3-button w3-display-topright">&times;</span>
                     <h2>COMPRAS MOBILES</h2>
                 </header>
-                <div class="w3-container">
-                    <p>El producto se agregro al carrito</p>
+                <div class="w3-container w3-striped">
+                    <div style="overflow-x:auto;">
+                        <form action="#" class="w3-container">
+                            
+                            <div class="row">
+                                <div class="col-12">
+                                    <label>NOMBRE DE LA TARJETA</label>
+                                    <input id="i-name" class="w3-input" type="text" required>
+                                    <label>EMAIL</label>
+                                    <input id="i-email" class="w3-input" type="email" required>
+                                </div>
+                                <div class="col-9">
+                                    <label>NO TARJETA</label>
+                                    <input id="i-no" class="w3-input" type="number" required maxlength="16">
+                                </div>
+                                <div class="col-3">
+                                    <label>CVV</label>
+                                    <input id="i-cvv" class="w3-input" type="number" required maxlength="3">
+                                </div>
+                                <div class="col-12">
+                                    <label>VENCIMIENTO DE LA TARJETA</label>
+                                    <select id="i-mes">
+                                        <optgroup label="MES">
+                                            <option value="dw">ENERO</option>
+                                            <option value="dw">FEBRERO</option>
+                                            <option value="dw">MARZO</option>
+                                            <option value="dw">ABRIL</option>
+                                            <option value="dw">MAYO</option>
+                                            <option value="dw">JUNIO</option>
+                                            <option value="dw">JULIO</option>
+                                            <option value="dw">AGOSTO</option>
+                                            <option value="dw">SEPTIEMBRE</option>
+                                            <option value="dw">OCTUBRE</option>
+                                            <option value="dw">NOVIEMBRE</option>
+                                            <option value="dw">DICIEMBRE</option>
+                                        </optgroup>
+                                    </select>
+                                    <select id="i-ano">
+                                        <optgroup label="AñO">
+                                            <option value="dw">2021</option>
+                                            <option value="dw">2022</option>
+                                            <option value="dw">2023</option>
+                                            <option value="dw">2024</option>
+                                            <option value="dw">2025</option>
+                                            <option value="dw">2026</option>
+                                            <option value="dw">2027</option>
+                                            <option value="dw">2028</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <table class="w3-table">
+                                        <tr class="w3-light-blue">
+                                            <th>Producto</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                        </tr>
+                                        <tr>
+                                            <td>XIAOMI REDMI NOTE 10</td>
+                                            <td>
+                                                <input type="text" name="precio" id="i-precio" value="$250" disabled class="inputvalue"/>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="precio" id="i-reemplazo" value="1" disabled class="inputvalue"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <footer class="w3-container w3-teal">
-                    <p>Comprar</p>
+                    <button id="btn-comprado" class="w3-button w3-red w3-right preview" onclick="funComprado()">
+                        COMPRAR
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </button>
                 </footer>
             </div>
         </div>
@@ -167,4 +247,53 @@
         </div>
     </footer>
 </body>
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous">
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+    
+    // actualizar y mostar alert 
+    function funComprado(){
+        
+        if(document.getElementById("i-name").value == "" 
+        || document.getElementById("i-email").value == ""
+        || document.getElementById("i-email").value == ""
+        || document.getElementById("i-no").value == ""
+        || document.getElementById("i-cvv").value == ""
+        ){
+            alert("Debes llenar los campo")
+        }
+        else{
+            document.getElementById("btn-comprado").innerHTML = swal("Comprado!", "La compra se realizo correctamente!", "success");
+            setTimeout(function(){
+                window.location.reload(1);
+            }, 2000);
+        }
+    }
+    
+    // conocer el value 
+    function getValueInput(){
+        let inputValue1 = document.getElementById('precio').value;
+        document.getElementById("precio").innerHTML = inputValue1; 
+        if(inputValue1=='1'){
+            document.getElementById('i-precio').value ="$250";
+            document.getElementById('i-reemplazo').value ="1";
+        }
+        if(inputValue1=='2'){
+            document.getElementById('i-precio').value ="$500";
+            document.getElementById('i-reemplazo').value ="2";
+        }
+        if(inputValue1=='3'){
+            document.getElementById('i-precio').value ="$750";
+            document.getElementById('i-reemplazo').value ="3";
+        }
+        
+    }
+    
+    
+</script>
 </html>
