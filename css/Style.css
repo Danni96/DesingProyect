@@ -269,7 +269,9 @@ header .showcase h1{
 .text-danger{
     color: red;
 }
-
+.inputvalue{
+    border: none;
+}
 /* Para tablet */
 @media only screen and (max-width: 900px) and (min-width: 600px){
     .col-t-1{width: 8.33%;}
