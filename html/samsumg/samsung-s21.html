@@ -149,11 +149,15 @@
                                 </div>
                                 <div class="col-9">
                                     <label>NO TARJETA</label>
-                                    <input id="i-no" class="w3-input" type="number" required maxlength="16">
+                                    <input id="i-no" class="w3-input" type="number" required 
+                                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                    maxlength="16">
                                 </div>
                                 <div class="col-3">
                                     <label>CVV</label>
-                                    <input id="i-cvv" class="w3-input" type="number" required maxlength="3">
+                                    <input id="i-cvv" class="w3-input" type="number" 
+                                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                    required maxlength="3">
                                 </div>
                                 <div class="col-12">
                                     <label>VENCIMIENTO DE LA TARJETA</label>
